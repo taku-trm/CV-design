@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #34A85A;
+    --text-color: #727171;
+}
+html{
+    font-size: 10px;
+}
+body{
+    font-family: Inter, sans-serif;
+    background-color: #333333;
+    color: white;
+
+}
+/*common styles*/
+img{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.description{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+.title{
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.item_pretitle{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 300;
+}
+.item_title{
+   font-size:  1.6rem;
+   color: white;
+   font-weight: 500;
+   margin: 0.8rem 0;
+}
+.item_subtitle{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+/*layouts*/
+.container{
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    padding: 5rem;
+    background: #070707;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+@media only screen and (max-width: 768px){
+    .container{
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 3rem;
+        gap: 7rem;
+    }
+}
+.profile{
+    grid-column: 1 / -1;
+    margin-bottom: 2rem;
+}
+.group-1{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+
+
+/*profile*/
+.profile_container{
+    display: flex;
+    gap: 2rem;
+}
+.profile_profileImg{
+    max-width: 250px;
+}
+.profile_name_firstName{
+    color: white;
+    font-weight: 200;
+    font-size: clamp(2rem, 8vw, 4rem);
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: -0.8rem;
+}
+.profile_name_lastName{
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: clamp(2.5rem, 15vw, 7rem);
+    text-transform: uppercase;
+    display: block; 
+}
+.profile_title{
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.downloadBtn{
+    display: block;
+}
+.button{
+    background-color: var(--primary-color);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: none;
+    border-radius: 3px;
+}
+
+.downloadBtn:hover{
+    color: black;
+}
+@media only screen and (max-width: 760px){
+    .profile_container{
+        flex-direction: column;
+    }
+}
+/*expertise*/ 
+.skill_list{
+    margin-top: 1rem;
+    margin-left: 2rem;
+    line-height: 2;
+}
+/* reference*/
+.ref_item{
+    margin-top: 2rem;
+}
+.ref_name{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+/*education*/
+.edu_item{
+    margin-top: 2rem;
+}
+/*certification*/
+.certification_item{
+    margin-top: 2rem;
+}
+/* exp */
+.exp_item{
+    margin-top: 2rem;
+}
+.exp_item2{
+    margint-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/*contact*/
+.email_me{
+    margin-bottom: 2rem;
+}
+/*email*/
+.email_me{
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 400;
+    transition: color 0.1s;
+}
+.email_me:hover{
+    color: var(--primary-color)
+}
+.email_me:active{
+    color: aquamarine;
+}
