@@ -1,1 +1,1 @@
-simple cv wesite for scs2114 assignment
+simple cv website design
